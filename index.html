@@ -18,9 +18,13 @@
  </div>
 
    <script type = "text/JavaScript">
+    const myTimeout = setTimeout(myGreetTime, 1000);
+
+    function myGreetTime() {
        document.getElementById('timeUTC').innerHTML =  moment.utc().format('D/M/YYYY hh:mm:ss');
        document.getElementById('timeIST').innerHTML =  moment().format('D/M/YYYY hh:mm:ss');
        document.getElementById('timeEST').innerHTML =  moment.utc().subtract(5, 'hours').format('D/M/YYYY hh:mm:ss');
+    }
  </script>
 </body>
 </html>
