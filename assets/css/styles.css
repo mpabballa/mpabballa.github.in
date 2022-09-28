@@ -11,3 +11,23 @@ img {
   width: 550px;
   align: center;
 }
+.bigtime {
+    color: #000;
+    background-color: #fafafa;
+    text-align: center;
+    padding: 15px 10px;
+    font-weight: 300;
+    margin: 16px auto;
+    max-width: 320px;
+}
+.bigtime-shadow{
+  color: #000;
+    text-align: center;
+    padding: 15px 10px;
+    font-weight: 300;
+    margin: 16px auto;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 30%);
+    max-width: 320px;
+}
