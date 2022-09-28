@@ -2,12 +2,33 @@
 <html>
 <head>
 <link rel="stylesheet" href="./assets/css/styles.css">
+ <script>
+       var UTC = new Date();
+       var UTC = UTC.getTime() // Get UTC Timestamp
+
+       var IST = new Date(date); // Clone UTC Timestamp
+       IST.setHours(IST.getHours() + 5); // set Hours to 5 hours later
+       IST.setMinutes(IST.getMinutes() + 30); // set Minutes to be 30 minutes later
+
+       var EST = new Date(date); // Clone date
+       EST.setHours(EST.getHours() - 4); // set EST to be 4 hour earlier
+  
+       document.getElementById('timeEST').innerHTML = UTC;
+       document.getElementById('timeEST').innerHTML = IST;
+       document.getElementById('timeEST').innerHTML = EST;
+ </script>
+ 
 </head>
 <body>
  <div class="div-content">
    <h2> Welcome <i> Mahesh Pabballa </i> ..! </h2>
   <p> Hi! My self Mahesh and I'm working as a .Net Full Stack Web Developer,
    With various Microsoft Technologies and having 5+ Years of Work Experience in the IT Industry.</p>
+  <div>
+   <label for="timeUTC">UTC: </label> <span id="timeUTC"></span>   
+   <label for="timeIST">IST: </label> <span id="timeIST"></span>
+   <label for="timeEST">EST: </label> <span id="timeEST"></span>
+  </div>
   <img src="./assets/images/IMG20220821153425.jpg"></img>
  </div>
 
